@@ -1,0 +1,29 @@
+Structure:
+lung-cancer-classifier/
+├── .gitignore
+├── .gitattributes          # For Git LFS (track large model files)
+├── requirements.txt        # Python dependencies with versions
+├── app.py                  # Tkinter GUI
+├── train_model.py          # Training script
+├── predict.py              # Prediction utility
+├── lung_cancer_model.h5    # Saved model (tracked via Git LFS)
+├── class_indices.json      # Class-label mappings
+└── dataset/                # (Not committed to Git)
+    ├── train/
+    ├── test/
+    └── valid/
+
+
+
+
+Installing Requirements:
+>   pip install -r requirements.txt
+
+Training Model First:
+>   python train_model.py
+This generates 2 files lung_cancer_model.h5 and class_indices.json
+lung_cancer_model.h5 is the model
+Which are used by the app
+
+Running The app:
+>   python app.py
