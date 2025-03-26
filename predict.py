@@ -3,7 +3,7 @@ import numpy as np
 from tensorflow.keras.preprocessing import image
 import json
 
-def load_model(model_path='lung_cancer_model.h5'):
+def load_model(model_path='lung_cancer_model.keras'):
     return tf.keras.models.load_model(model_path)
 
 def load_class_indices(json_path='class_indices.json'):
